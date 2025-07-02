@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Urban+Rounded:wght@700&display=swap');
+body {
+    background: radial-gradient(circle at 20% 30%, #6b9492 0%, #65c6b8 40%, #9ce4f3 70%, #6dddf9 100%);
+    background-attachment: fixed;
+    height: 1200px;
+    width: 1200px;
+    color: #222; 
+    font-family: 'Segoe UI', Arial, sans-serif; 
+    padding: 0px;
+    padding-top: 100px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow-x: hidden;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+    background: url('https://www.transparenttextures.com/patterns/watercolor.png');
+    opacity: 0.25;
+    mix-blend-mode: lighten;
+}
+
+nav {
+    background-color: #a9adb37d; 
+    border-bottom: 5px solid #101111; 
+    width: 100vw;
+    margin:0;
+    border-radius: 0;
+    text-align: center;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    position: relative;
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #222;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 16px 10px 22px 10px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+    position: relative;
+}
+
+nav a:hover {
+    background: #d2e3f3;
+    color: #3a7ca5;
+}
+
+nav a.active::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 6px;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    background: #3a7ca5;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px #3a7ca555;
+    transition: background 0.2s;
+    z-index: 2;
+}
+
+nav a .icon {
+    font-size: 1.2em;
+    display: inline-block;
+    vertical-align: middle;
+}
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(34, 34, 34, 0.07);
+    padding: 40px 30px;
+    flex : 1 ;
+}
+
+h1, h2 {
+    color:black; 
+    margin-bottom: 18px;
+    margin-right: 300px;
+    font-size: 2em;
+    font-family: 'Urban Rounded', Arial, sans-serif;
+}
+h4 {
+    color: black;
+    font-size: 1.2em;
+    font-family: 'Urban Rounded', Arial, sans-serif;
+
+
+}
+
+section {
+    margin-bottom: 36px;
+    margin-left: 400px;
+}
+
+.skill {
+      background-color: #3a7ca5;
+      color: #fff;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      min-width: 220px;
+      max-width: 260px;
+      flex: 1 1 220px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      position: relative;
+    }
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 24px;
+      margin-right: 200px;
+    }
+    .skill img {
+      width: 40px;
+      height: 40px;
+      vertical-align: middle;
+    }
+    .skill-bar {
+      background-color: #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-top: 5px;
+    }
+    .skill-bar-fill {
+      height: 10px;
+      background-color: #007bff;
+      width: 75%; 
+    }
+    .skill:hover {
+    transform: translateY(-12px) scale(1.04);
+    box-shadow: 0 8px 24px rgba(62,198,224,0.18);
+    z-index: 2;
+}
+
+.footer {      
+    left: 55px;
+    margin: 0 auto;
+    padding: 0;
+    background: radial-gradient(circle at 20% 30%, #6b9492 0%, #65c6b8 40%, #9ce4f3 70%, #6dddf9 100%);;
+    color: black;
+    text-align: center;
+    position: relative;
+}
+
+button, .btn {
+    background-color: #3a7ca5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 22px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.2s;
+}
+
+
+button:hover, .btn:hover {
+    background-color: #222;
+}
+
+a {
+    transition: color 0.2s;
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    background: #e3e8ee;
+}
+::-webkit-scrollbar-thumb {
+    background: #0d0d0e;
+    border-radius: 4px;
+}
+
+/* Contact Form Styles */
+#contact-form fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1.5px solid black ;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 2px;
+    background:transparent;
+    width: 500px;
+}
+
+#contact-form input,
+#contact-form textarea,
+#contact-form button {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: 1px solid #b6c6d6;
+    font-size: 1em;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+#contact-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+#contact-form button {
+    background: #3a7ca5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#contact-form button:hover {
+    background: #222;
+}
+
+/* Contact Icons */
+.contact-icons {
+    margin-top: 18px;
+    margin-right: 300px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+.contact-icons a {
+    color: #3a7ca5;
+    transition: color 0.2s;
+}
+.contact-icons a:hover {
+    color: #222;
+}
+
+/* About Section Styles */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 90px;
+    margin-right:190px;
+}
+.about-card {
+    background: #3a7ca5;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(34, 34, 34, 0.07);
+    padding: 24px 20px;
+    min-width: 220px;
+    max-width: 320px;
+    flex: 1 1 220px;
+    color: whitesmoke;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.35s cubic-bezier(.22,1.61,.36,1), box-shadow 0.3s;
+}
+
+.about-card::before {
+    content: "";
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(180deg, rgba(62,198,224,0.18) 0%, rgba(46,224,180,0.35) 100%);
+    border-radius: 0 0 12px 12px;
+    z-index: 0;
+    transition: height 0.7s cubic-bezier(.22,1.61,.36,1);
+    pointer-events: none;
+}
+
+.about-card:hover {
+    transform: translateY(-18px) scale(1.04);
+    box-shadow: 0 12px 32px rgba(62,198,224,0.22);
+}
+
+.about-card:hover::before {
+    height: 100%;
+}
+
+.about-card > * {
+    position: relative;
+    z-index: 1;
+}
+.home-container {
+    margin-top: 90px;
+    
+}
+.project-grid {
+  margin-top: 120px;
+}
+
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    margin-right: 170px;
+    margin-top: 50px;
+    width: 250px;
+    height: 250px;
+    background:
+        linear-gradient(135deg, rgba(44, 183, 201, 0.18) 0%, rgba(46, 224, 180, 0.12) 100%),
+        url('group-african-college-students-smiling-indoors-33002638.webp') center/cover no-repeat;
+    border-radius: 50%;
+    z-index: 0;
+    box-shadow: 0 8px 32px 0 rgba(44,183,201,0.13);
+    animation: floatProfile 3.5s ease-in-out infinite alternate;
+}
+
+@keyframes floatProfile {
+    0%   { transform: translateY(0px) scale(1);}
+    100% { transform: translateY(-28px) scale(1.04);}
+}
+
+@media (max-width: 700px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+    }
+    nav a {
+        justify-content: flex-start;
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+/* Burger menu styles */
+.burger {
+    display: none;
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    z-index: 2001;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger span {
+    display: block;
+    width: 28px;
+    height: 4px;
+    margin: 5px 0;
+    background: #222;
+    border-radius: 2px;
+    transition: 0.4s;
+}
+
+/* Responsive nav */
+@media (max-width: 900px) {
+    .burger {
+        display: flex;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100vw;
+        background: #e3e8ee;
+        box-shadow: 0 4px 16px rgba(34,34,34,0.07);
+        padding: 0;
+        margin: 0;
+        display: none;
+        z-index: 2000;
+    }
+    nav ul.open {
+        display: flex;
+    }
+    nav a {
+        width: 100vw;
+        justify-content: flex-start;
+        border-radius: 0;
+        font-size: 1.2em;
+        padding: 16px 24px;
+        box-sizing: border-box;
+    }
+}
+
+.section-separator {
+    border: none;
+    border-top: 4px solid black;
+    margin: 48px auto;
+    width: 60%;
+    opacity: 0.25;
+
+}
+
+nav a i {
+    font-size: 1.4em; 
+}
