@@ -246,7 +246,7 @@ a {
     border-radius: 15px;
     padding: 18px 24px;
     margin: 0 auto 18px auto;
-    background: #f8fafd;
+    background: whitesmoke;
     width: 100%;
     max-width: 420px;
 }
@@ -379,7 +379,8 @@ a {
     align-items: center;
 }
 .project-card {
-    background: #fff;
+    background: whitesmoke;
+    border: #3a7ca5 2px solid;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(34, 34, 34, 0.08);
     padding: 18px 14px;
@@ -487,6 +488,7 @@ nav a i {
     .project-card {
         max-width: 98vw;
         width: 100%;
+    
     }
     #contact-form fieldset {
         max-width: 98vw;
@@ -514,4 +516,10 @@ nav a i {
 
 html {
     scroll-behavior: smooth;
+}
+.project-card img{
+      max-width: 320px;
+    min-width: 220px;
+    flex: 1 1 220px;
+    margin: 0 auto 18px auto;
 }
