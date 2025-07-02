@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Portfolio Nourah</title>
+    <title>Portfolio Nourah</title>
     <link rel="stylesheet" href="accueil.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -12,30 +12,33 @@
     <nav>
         <ul class="nav-links">
             <li><a href="#home" class="active"><i class="fas fa-home"></i></a></li>
-            <li><a href="#about" ><i class="fas fa-user"></i></a></li>
+            <li><a href="#about"><i class="fas fa-user"></i></a></li>
             <li><a href="#skills"><i class="fas fa-cog"></i></a></li>
             <li><a href="#projects"><i class="fas fa-laptop-code"></i></a></li>
             <li><a href="#contact"><i class="fas fa-phone"></i></a></li>
         </ul>
+        <div class="burger" id="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
-
-    <!-- Burger menu button -->
-    <div class="burger" id="burger-menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
 
     <!-- Home Section -->
     <section id="home">
         <div class="home-container">
-          <h1>Salut, je suis </h1>
-        <h1>Nourah MOPOSSY</h1>
-        <p> Etudiante en génie logiciel.</p>
-        <p>Bienvenue sur mon Portfolio! </p>
-        <p> Prenez du temps pour  bien le parcourir</p>
-        <a href="#projects" class="btn">Voir les  Projets</a>
-        <a href="CV_NourahMOPOSSY.pdf"   class="btn" download> Télécharger mon CV</a>
+            <div class="profile-photo">
+                <img src="photo_profil.jpg" alt="Photo de Nourah Mopossy">
+            </div>
+            <div class="home-text">
+                <h1>Salut, je suis</h1>
+                <h1>Nourah MOPOSSY</h1>
+                <p>Étudiante en génie logiciel.</p>
+                <p>Bienvenue sur mon Portfolio !</p>
+                <p>Prenez du temps pour bien le parcourir</p>
+                <a href="#projects" class="btn">Voir les Projets</a>
+                <a href="CV_NourahMOPOSSY.pdf" class="btn" download>Télécharger mon CV</a>
+            </div>
         </div>
     </section>
 
@@ -43,26 +46,19 @@
 
     <!-- About Section -->
     <section id="about">
-        
+        <h2>À Propos De Moi</h2>
         <div class="about-container">
-          <h2> A Propos De Moi</h2>
             <div class="about-card">
-                <h4>
-                    <i class="fas fa-graduation-cap"></i> Education
-                </h4>
-                <p>Étudiante en première année de génie logiciel à l'Institut Universitaire de la Côte. Intriguéeet désireuse de savoir par l'informatique et le développement logiciel.</p>
+                <h4><i class="fas fa-graduation-cap"></i> Éducation</h4>
+                <p>Étudiante en première année de génie logiciel à l'Institut Universitaire de la Côte. Intriguée et désireuse de savoir par l'informatique et le développement logiciel.</p>
             </div>
             <div class="about-card">
-                <h4>
-                    <i class="fas fa-check-circle"></i> Qualités
-                </h4>
+                <h4><i class="fas fa-check-circle"></i> Qualités</h4>
                 <p>Curieuse, persévérante, j'aime relever les défis surtout ceux en équipe et apprendre de nouvelles technologies.</p>
             </div>
             <div class="about-card">
-                <h4>
-                    <i class="fas fa-futbol"></i> Hobbies
-                </h4>
-                <p> Design web, Sport, lecture, musique.</p>
+                <h4><i class="fas fa-futbol"></i> Hobbies</h4>
+                <p>Design web, sport, lecture, musique.</p>
             </div>
         </div>
     </section>
@@ -72,44 +68,44 @@
     <!-- Skills Section -->
     <section id="skills">
         <h2>Mes Compétences</h2>
-       <div class="skills-container">
-      <div class="skill">
-        <h4><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"> HTML : 75%</h4>
-        <div class="skill-bar">
-          <div class="skill-bar-fill" style="width: 75%;"></div>
+        <div class="skills-container">
+            <div class="skill">
+                <h4><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"> HTML : 75%</h4>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h4><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"> CSS : 50%</h4>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 50%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h4><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS"> JavaScript : 15%</h4>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 15%;"></div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="skill">
-        <h4><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"> CSS : 50%</h4>
-        <div class="skill-bar">
-          <div class="skill-bar-fill" style="width: 50%;"></div>
-        </div>
-      </div>
-      <div class="skill">
-        <h4><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS"> JavaScript : 15 %</h4>
-        <div class="skill-bar">
-          <div class="skill-bar-fill" style="width: 15%;"></div>
-        </div>
-      </div>
-    </div>
     </section>
 
     <hr class="section-separator">
 
     <!-- Projects Section -->
-    <section id="projects">  
+    <section id="projects">
+        <h2>Mes Projets</h2>
         <div class="project-grid">
-          <h2>Mes  Projets</h2>
             <div class="project-card">
                 <img src="https://via.placeholder.com/300" alt="Projet 1">
                 <h3>MON PORTFOLIO</h3>
-                <p>A brief description of the project.</p>
+                <p>Un site personnel pour présenter mon parcours, mes compétences et mes projets.</p>
                 <a href="#" class="btn">Voir le projet</a>
             </div>
             <div class="project-card">
                 <img src="https://via.placeholder.com/300" alt="Projet 2">
                 <h3>HERMED (en cours)</h3>
-                <p> Logiciel de gestion des stocks d'une pharmacie.</p>
+                <p>Logiciel de gestion des stocks d'une pharmacie.</p>
                 <a href="#" class="btn">Voir le Projet</a>
             </div>
         </div>
@@ -122,11 +118,11 @@
         <h2>Me Contacter</h2>
         <form id="contact-form">
             <fieldset>
-                <legend> Laissez-moi un mail</legend>
-                 <input type="text" placeholder="Votre Nom" required>
-                 <input type="email" placeholder="Votre Email" required>
-                 <textarea placeholder="Votre Message" required></textarea>
-                 <button type="submit" class="btn">Envoyer</button>
+                <legend>Laissez-moi un mail</legend>
+                <input type="text" placeholder="Votre Nom" required>
+                <input type="email" placeholder="Votre Email" required>
+                <textarea placeholder="Votre Message" required></textarea>
+                <button type="submit" class="btn">Envoyer</button>
             </fieldset>
         </form>
         <div class="contact-icons">
@@ -138,62 +134,34 @@
     </section>
 
     <!-- Footer -->
-     <div class="footer">
-        <footer>
-            <p>&copy; 2025 Portfolio_NourahMopossyFezeMaritza. Tous Droits Réservés.</p>
-        </footer>
-    </div>
-    <!-- JavaScript for Navigation -->
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-  const links = document.querySelectorAll('nav .nav-links a');
-  const drop = document.querySelector('.nav-drop');
-  function moveDropTo(link) {
-    const rect = link.getBoundingClientRect();
-    const navRect = link.closest('nav').getBoundingClientRect();
-    drop.style.left = (rect.left - navRect.left + rect.width/2 - 16) + 'px';
-    drop.style.width = '32px';
-    drop.style.height = '32px';
-    drop.style.background = 'radial-gradient(ellipse at 60% 40%, #3ec6e0 70%, #2bc0e4 100%)';
-  }
-  function updateActive() {
-    const scrollY = window.scrollY;
-    let activeIndex = 0;
-    links.forEach((link, i) => {
-      const section = document.querySelector(link.getAttribute('href'));
-      if (section && section.offsetTop - 100 <= scrollY) activeIndex = i;
-    });
-    links.forEach(link => link.classList.remove('active'));
-    links[activeIndex].classList.add('active');
-    moveDropTo(links[activeIndex]);
-  }
-  links.forEach(link => {
-    link.addEventListener('click', e => {
-      setTimeout(updateActive, 400); // attend le scroll
-    });
-  });
-  window.addEventListener('scroll', updateActive);
-  window.addEventListener('resize', updateActive);
-  updateActive();
-});
-        </script>
-    <!-- JavaScript for Contact Form -->
+    <footer class="footer">
+        <p>&copy; 2025 Portfolio_NourahMopossyFezeMaritza. Tous Droits Réservés.</p>
+    </footer>
+
+    <!-- Burger Menu JS -->
     <script>
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            alert('Message envoyé avec succès!');
-            this.reset();
+    document.addEventListener('DOMContentLoaded', function () {
+        const burger = document.getElementById('burger-menu');
+        const navUl = document.querySelector('nav ul');
+        burger.addEventListener('click', function () {
+            navUl.classList.toggle('open');
+            burger.classList.toggle('active');
         });
-
-</script>
-<script>
-const burger = document.getElementById('burger-menu');
-const navLinks = document.querySelector('nav ul');
-burger.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-    burger.classList.toggle('active');
-});
-</script>
-
+        navUl.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navUl.classList.remove('open');
+                burger.classList.remove('active');
+            });
+        });
+    });
+    </script>
+    <!-- Contact Form JS -->
+    <script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Message envoyé avec succès!');
+        this.reset();
+    });
+    </script>
 </body>
 </html>
